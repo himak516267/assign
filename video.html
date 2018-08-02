@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title><h2>Task - 1:</h2>
+    <br>Using basic HTML-5 tags create a Video controller which plays video and Audio controller which plays audio format and make sure all the video and audio formats should be supported by all the browsers.
+  </br>
+  </head>
+  <body><video width="320" height="240" controls Id="video">
+  <source src="assign\33.mp4" type="video/mp4">
+
+
+
+
+</script>
+</video>
+<br>
+<button type="button" name="button"onclick="play()">play</button>
+<button type="button" name="button"onclick="pause()">pause</button>
+</br>
+<audio controls Id="audio">
+  <source src="assign\11.mp3" type="audio/mp3">
+
+</audio>
+<button type="button" name="button"onclick="play()">play</button>
+<button type="button" name="button"onclick="pause()">pause</button>
+  </body>
+</html>
+<script type="text/javascript">
+
+  function play(){
+    var vid=document.getElementById('video');
+    vid.play();
+  }
+  function pause(){
+    var vid=document.getElementById('video');
+    vid.pause();
+  }
+    </script>
+    <script type="text/javascript">
+
+      function play(){
+        var vid=document.getElementById('audio');
+        vid.play();
+      }
+      function pause(){
+        var vid=document.getElementById('audio');
+        vid.pause();
+      }
+        </script>

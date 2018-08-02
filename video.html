@@ -6,20 +6,16 @@
     <br>Using basic HTML-5 tags create a Video controller which plays video and Audio controller which plays audio format and make sure all the video and audio formats should be supported by all the browsers.
   </br>
   </head>
-  <body><video width="320" height="240" controls Id="video">
-  <source src="assign\33.mp4" type="video/mp4">
-
-
-
-
-</script>
-</video>
+  <body>
+  <video width="320" height="240" auto controls Id="video">
+  <source src="33.mp4" type="video/mp4">
+ </video>
 <br>
 <button type="button" name="button"onclick="play()">play</button>
 <button type="button" name="button"onclick="pause()">pause</button>
 </br>
-<audio controls Id="audio">
-  <source src="assign\11.mp3" type="audio/mp3">
+<audio width="320" height="200" auto controls Id="audio">
+  <source src="11.mp3" type="audio/mp3">
 
 </audio>
 <button type="button" name="button"onclick="play()">play</button>
@@ -36,9 +32,6 @@
     var vid=document.getElementById('video');
     vid.pause();
   }
-    </script>
-    <script type="text/javascript">
-
       function play(){
         var vid=document.getElementById('audio');
         vid.play();
@@ -48,3 +41,4 @@
         vid.pause();
       }
         </script>
+        </html>
